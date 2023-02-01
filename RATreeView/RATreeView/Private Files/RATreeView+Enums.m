@@ -92,6 +92,12 @@
       return UITableViewStylePlain;
     case RATreeViewStyleGrouped:
       return UITableViewStyleGrouped;
+    case RATreeViewStyleInsetGrouped:
+      if (@available(iOS 13.0, *)) {
+          return UITableViewStyleInsetGrouped;
+      } else {
+          return UITableViewStyleGrouped;
+      }
   }
 }
 
@@ -100,8 +106,14 @@
   switch (tableViewStyle) {
     case UITableViewStylePlain:
       return RATreeViewStylePlain;
-    default:
+    case UITableViewStyleGrouped:
       return RATreeViewStyleGrouped;
+    case UITableViewStyleInsetGrouped:
+          if (@available(iOS 13.0, *)) {
+              return RATreeViewStyleInsetGrouped;
+          } else {
+              return RATreeViewStyleGrouped;
+          }
   }
 }
 #pragma mark Scroll Positions
