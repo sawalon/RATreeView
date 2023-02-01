@@ -23,7 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef enum {
     RATreeViewStylePlain = 0,
-    RATreeViewStyleGrouped
+    RATreeViewStyleGrouped,
+    RATreeViewStyleInsetGrouped  API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(tvos)  // grouped sections are inset with rounded corners
 } RATreeViewStyle;
 
 typedef enum RATreeViewCellSeparatorStyle {
