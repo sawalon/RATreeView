@@ -21,7 +21,7 @@
 		0626D5761BF7E85B00CD3B04 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7321198D6E42006BAED0 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */; };
 		0626D5781BF7E85B00CD3B04 /* RATreeView+TableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7323198D6E42006BAED0 /* RATreeView+TableViewDataSource.h */; };
 		0626D57A1BF7E85B00CD3B04 /* RATreeView+TableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7325198D6E42006BAED0 /* RATreeView+TableViewDelegate.h */; };
-		0626D57E1BF7E85C00CD3B04 /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7329198D6E42006BAED0 /* RATreeView_ClassExtension.h */; };
+		0626D57E1BF7E85C00CD3B04 /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7329198D6E42006BAED0 /* RATreeView_ClassExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0626D57F1BF7E89800CD3B04 /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B53B976A17D3843600A05E2F /* RATreeView.m */; };
 		0626D5801BF7E89800CD3B04 /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = B59F7310198D6E42006BAED0 /* RABatchChanges.m */; };
 		0626D5811BF7E89800CD3B04 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B59F7312198D6E42006BAED0 /* RATreeNode.m */; };
@@ -68,7 +68,7 @@
 		06B623971BF8A98E0070DCA9 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7321198D6E42006BAED0 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */; };
 		06B623981BF8A98E0070DCA9 /* RATreeView+TableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7323198D6E42006BAED0 /* RATreeView+TableViewDataSource.h */; };
 		06B623991BF8A98E0070DCA9 /* RATreeView+TableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7325198D6E42006BAED0 /* RATreeView+TableViewDelegate.h */; };
-		06B6239B1BF8A98E0070DCA9 /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7329198D6E42006BAED0 /* RATreeView_ClassExtension.h */; };
+		06B6239B1BF8A98E0070DCA9 /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F7329198D6E42006BAED0 /* RATreeView_ClassExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06B623A51BF91AF90070DCA9 /* RATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B623A31BF91AF90070DCA9 /* RATableView.h */; };
 		06B623A61BF91AF90070DCA9 /* RATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B623A31BF91AF90070DCA9 /* RATableView.h */; };
 		06B623A71BF91AF90070DCA9 /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B623A41BF91AF90070DCA9 /* RATableView.m */; };
@@ -259,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0626D5631BF7E85200CD3B04 /* RATreeView.h in Headers */,
+				0626D57E1BF7E85C00CD3B04 /* RATreeView_ClassExtension.h in Headers */,
 				0626D5641BF7E85B00CD3B04 /* RABatchChanges.h in Headers */,
 				0626D5661BF7E85B00CD3B04 /* RATreeNode.h in Headers */,
 				0626D5681BF7E85B00CD3B04 /* RATreeNode_ClassExtension.h in Headers */,
@@ -274,7 +275,6 @@
 				0626D5761BF7E85B00CD3B04 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */,
 				0626D5781BF7E85B00CD3B04 /* RATreeView+TableViewDataSource.h in Headers */,
 				0626D57A1BF7E85B00CD3B04 /* RATreeView+TableViewDelegate.h in Headers */,
-				0626D57E1BF7E85C00CD3B04 /* RATreeView_ClassExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0626D6A21BF8A91500CD3B04 /* RATreeView.h in Headers */,
+				06B6239B1BF8A98E0070DCA9 /* RATreeView_ClassExtension.h in Headers */,
 				06B6238D1BF8A98E0070DCA9 /* RABatchChanges.h in Headers */,
 				06B6238E1BF8A98E0070DCA9 /* RATreeNode.h in Headers */,
 				06B6238F1BF8A98E0070DCA9 /* RATreeNode_ClassExtension.h in Headers */,
@@ -298,7 +299,6 @@
 				06B623971BF8A98E0070DCA9 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */,
 				06B623981BF8A98E0070DCA9 /* RATreeView+TableViewDataSource.h in Headers */,
 				06B623991BF8A98E0070DCA9 /* RATreeView+TableViewDelegate.h in Headers */,
-				06B6239B1BF8A98E0070DCA9 /* RATreeView_ClassExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +413,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B53B973717D3840800A05E2F;

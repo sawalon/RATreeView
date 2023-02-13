@@ -20,6 +20,6 @@
     "tvos": "9.0"
   },
   "source_files": "RATreeView/RATreeView/**/*.{h,m}",
-  "public_header_files": "RATreeView/RATreeView/RATreeView.h",
+  "public_header_files": "RATreeView/RATreeView/*.h",
   "requires_arc": true
 }
